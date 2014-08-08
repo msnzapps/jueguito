@@ -398,11 +398,11 @@ layout = {
 		this.center_height = Math.floor(factor*this.proportion.height/this.scaleStep)*this.scaleStep;
 		var  total_width = this.center_width+reserved.width, total_height = this.center_height+reserved.height;
 		
-		document.body.style.height = metrics.innerHeight+'px';
-		document.getElementById("paneCenter").style.width = this.center_width+'px';
-		document.getElementById("paneCenter").style.height = this.center_height+'px';
-		document.getElementById("panesCenter").style.width = total_width + 'px';
-		document.getElementById("panes").style.height = total_height+'px';
+		document.body.style.height = "100%";
+		document.getElementById("paneCenter").style.width = "100%";
+		document.getElementById("paneCenter").style.height = "100%";
+		document.getElementById("panesCenter").style.width = "100%";
+		document.getElementById("panes").style.height = "100%";
 		app.layout();
 	}
 }
